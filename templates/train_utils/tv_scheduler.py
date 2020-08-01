@@ -3,9 +3,8 @@ import numpy as np
 from tqdm import tqdm
 from .schedulers.scheduler import get_scheduler
 from .optim.optimizers import get_optimizer
-from abc import ABC, abstractmethod
 
-class TrainValScheduler(ABC):
+class TrainValScheduler:
     def __init__(self, network, data_loaders,
                  lr=1e-3, num_epoch=5000, batch_size=128,
                  using_step_lr=True, step_size=50, gamma=0.9,

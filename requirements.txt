@@ -3,3 +3,4 @@ tensorboardX
 tqdm
 torch
 click
+torchvision
